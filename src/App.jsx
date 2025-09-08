@@ -3,6 +3,9 @@ import './App.css'
 import Tenisnike from './assets/tenisdanike.webp'
 import Tenisnike2 from './assets/tenis nike.jpeg'
 import Tenisnike3 from './assets/tn.webp'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
 
 
 
@@ -12,7 +15,24 @@ function App() {
   return (
     <>
      <main>
-      <header></header>
+      <header>    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      loop={true}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 3000, 
+              disableOnInteraction: false, 
+            }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide><img src={Tenisnike} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike2} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike3} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike} alt="" className="img-prod" /></SwiperSlide>
+    </Swiper>
+</header>
       <section className="produtos">
 
         {/*Produto 1 */}
@@ -55,7 +75,7 @@ function App() {
       <footer></footer>
      </main>
     </>
-  )
-}
+      )
+          }
 
 export default App
