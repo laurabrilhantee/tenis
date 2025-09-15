@@ -5,6 +5,10 @@ import Tenisnike2 from './assets/tenis nike.jpeg'
 import Tenisnike3 from './assets/tn.webp'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
+import Tenisnike4 from './assets/ten.png'
+import Tenisnike5 from './assets/prom.png'
+import Tenisnike6 from './assets/nik6.png'
+import Tenisnike7 from './assets/nik7.png'
 import 'swiper/css'
 
 
@@ -27,10 +31,10 @@ function App() {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><img src={Tenisnike} alt="" className="img-prod" /></SwiperSlide>
-      <SwiperSlide><img src={Tenisnike2} alt="" className="img-prod" /></SwiperSlide>
-      <SwiperSlide><img src={Tenisnike3} alt="" className="img-prod" /></SwiperSlide>
-      <SwiperSlide><img src={Tenisnike} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike4} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike5} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike6} alt="" className="img-prod" /></SwiperSlide>
+      <SwiperSlide><img src={Tenisnike7} alt="" className="img-prod" /></SwiperSlide>
     </Swiper>
 </header>
       <section className="produtos">
