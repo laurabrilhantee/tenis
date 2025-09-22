@@ -9,6 +9,7 @@ import Tenisnike4 from './assets/ten.png'
 import Tenisnike5 from './assets/prom.png'
 import Tenisnike6 from './assets/nik6.png'
 import Tenisnike7 from './assets/nik7.png'
+import Logo from './assets/nlg.png'
 import 'swiper/css'
 
 
@@ -20,8 +21,8 @@ function App() {
     <>
      <main>
       <header>    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={0}
+      slidesPerView={1}
       loop={true}
             modules={[Autoplay]}
             autoplay={{
@@ -75,11 +76,33 @@ function App() {
           </div>      
         </a>                      
       </section>
-      <section className="destaque"></section>
-      <footer></footer>
-     </main>
+       <section className="destaque">
+
+        </section>
+
+        <footer>
+
+          <img src={Logo} alt="" className="logo-footer" />
+
+          <div className="social-icons">
+            <div className="icon">
+              <img src="" alt="" id="instagram" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="discord" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="x" />
+            </div>
+            <div className="icon">
+              <img src="" alt="" id="youtube" />
+            </div>
+          </div>
+
+        </footer>
+      </main>
     </>
-      )
-          }
+  )
+}
 
 export default App
