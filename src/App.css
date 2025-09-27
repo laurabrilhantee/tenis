@@ -106,7 +106,7 @@ header{
 }
 footer{
   width: 100%;
-  height: auto;
+  height: 90vh;
   background: white;
   float: left;
   display: flex;
