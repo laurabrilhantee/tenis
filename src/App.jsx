@@ -90,7 +90,7 @@ function App() {
 
         <footer>s
 
-          <img src={Logo} alt="" className="logo-footer" />
+         <img src={Logo} alt="" className="logo-footer" /> 
 
           <div className="social-icons">
             <div className="icon">
