@@ -88,7 +88,7 @@ function App() {
         </iframe>
         </section>
 
-        <footer>s
+        <footer>
 
          <img src={Logo} alt="" className="logo-footer" /> 
 
